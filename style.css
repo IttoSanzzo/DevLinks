@@ -28,6 +28,7 @@ body {
 	background-position: center;
 	background-position-y: top;
 	background-size: cover;
+	height: 100vh;
 	transition: background-image 1.5s;
 }
 
@@ -171,7 +172,7 @@ ul li.icons a ion-icon:hover {
 	font-weight: 500;
 	text-align: center;
 	padding: 5px 0px;
-	margin: 14px 15vmax;
+	margin: 14px 20%;
 }
 
 #loveMessage a {
@@ -180,4 +181,16 @@ ul li.icons a ion-icon:hover {
 
 #loveMessage a:hover {
 	color: red;
+}
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+	:root {
+		--bg-url: url(./assets/bg-desktop.jpg);
+	}
+
+	.theme {
+		--bg-url: url(./assets/bg-desktop-light.jpg);
+	}
 }
