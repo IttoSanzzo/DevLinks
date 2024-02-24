@@ -2,7 +2,7 @@
 
 <p align="center">
 Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-<a href="https://app.rocketseat.com.br/discover">Estude esse projeto em formato de vídeo clicando aqui.</a>
+<a href="https://app.rocketseat.com.br/discover" target="_blank">Estude esse projeto em formato de vídeo clicando aqui.</a>
 </p>
 
 <p align="center">
