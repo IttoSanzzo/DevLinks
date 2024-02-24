@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;@500&display=swap"
+			rel="stylesheet" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="profile">
+				<img src="./assets/avatar.jpeg" alt="Profile image." />
+				<p>@IttoSanzzo</p>
+			</div>
+			<div id="themeSwitch" onclick="toggleTheme()">
+				<button></button>
+				<span></span>
+			</div>
+			<ul id="linkList">
+				<li class="links"><a href="#">Inscrever-se</a></li>
+				<li class="links"><a href="#">Baixar NCIS</a></li>
+				<li class="links">
+					<a href="https://github.com/IttoSanzzo" target="_blank">
+						Veja meu portifólio
+					</a>
+				</li>
+				<li class="links">
+					<a href="#" onclick="yellHell()">Conheça mais</a>
+				</li>
+			</ul>
+			<ul id="iconButtons">
+				<li class="icons">
+					<a href="https://github.com/IttoSanzzo" target="_blank"
+						><ion-icon name="logo-github"></ion-icon
+					></a>
+				</li>
+				<li class="icons">
+					<a
+						href="https://www.instagram.com/ittos.sanzzo/"
+						target="_blank"
+						><ion-icon name="logo-instagram"></ion-icon
+					></a>
+				</li>
+				<li class="icons">
+					<a
+						href="https://www.youtube.com/channel/UCrteXpAaXI2Wmy7m9SkdpoA"
+						target="_blank"
+						><ion-icon name="logo-youtube"></ion-icon
+					></a>
+				</li>
+				<li class="icons">
+					<a
+						href="https://www.linkedin.com/in/ittosanzzo/"
+						target="_blank"
+						><ion-icon name="logo-linkedin"></ion-icon
+					></a>
+				</li>
+			</ul>
+			<p id="loveMessage">
+				Feito com <ion-icon name="heart"></ion-icon> por
+				<a href="https://github.com/IttoSanzzo" target="_blank"
+					>IttoSanzzo</a
+				>.
+			</p>
+		</div>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>

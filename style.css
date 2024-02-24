@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--text-color: white;
+	--bg-url: url(./assets/bg-mobile.jpg);
+	--struct-color: dimgrey;
+	--hover-bord: white;
+	--love-mss-bord: rgba(255, 100, 100, 0.3);
+	--switch-button: url(./assets/moon-stars.svg);
+}
+
+.theme {
+	--text-color: black;
+	--bg-url: url(./assets/bg-mobile-light.jpg);
+	--struct-color: rgba(255, 32, 199, 0.361);
+	--hover-bord: rgba(255, 32, 199, 1);
+	--love-mss-bord: rgb(219, 37, 103);
+	--switch-button: url(./assets/sun.svg);
+}
+
+body {
+	background-image: var(--bg-url);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: top;
+	background-size: cover;
+	transition: background-image 1.5s;
+}
+
+body * {
+	font-family: "Inter", sans-serif;
+	color: var(--text-color);
+}
+
+/* Container */
+
+#container {
+	width: 360px;
+	margin: 16px auto 0px;
+}
+
+/* Profile */
+
+#profile {
+	text-align: center;
+	padding: 24px;
+}
+#profile img {
+	border: 3px solid var(--struct-color);
+	width: 112px;
+	height: 112px;
+	border-radius: 50%;
+}
+
+#profile p {
+	font-weight: 500;
+	line-height: 24px;
+	margin-top: 8px;
+}
+
+/* Switch */
+
+#themeSwitch {
+	position: relative;
+	width: 64px;
+	margin: 4px auto;
+}
+
+#themeSwitch button {
+	width: 32px;
+	height: 32px;
+	background: white var(--switch-button) no-repeat center;
+	border: none;
+	border-radius: 50%;
+
+	position: absolute;
+	left: 2;
+	transform: translateY(-50%);
+	top: 50%;
+	z-index: 1;
+}
+
+.theme #themeSwitch button {
+	left: initial;
+	right: -2px;
+}
+
+#themeSwitch span {
+	display: block;
+	width: 64px;
+	height: 24px;
+	background-color: rgba(105, 205, 255, 0.1);
+	border: 1px solid var(--struct-color);
+	border-radius: 9999px;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+}
+
+/* List of Links */
+
+#linkList {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	margin: 24px 0;
+	gap: 16px;
+}
+
+ul li.links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 16px 24px;
+	margin: 0px 24px;
+
+	background-color: rgba(105, 205, 255, 0.1);
+	border: 1px solid var(--struct-color);
+	border-radius: 8px;
+
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+
+	text-decoration: none;
+	font-weight: 500;
+
+	transition: background 1s;
+	transition: border 0.5s;
+}
+
+ul li.links a:hover {
+	background-color: rgba(105, 105, 255, 0.2);
+	border: 1.5px solid var(--hover-bord);
+}
+
+/* Ioicons */
+
+#iconButtons {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	justify-content: center;
+	margin: 8px 0px 0px;
+	padding: 0 24px;
+}
+
+ul li.icons a ion-icon {
+	font-size: 28px;
+	border-radius: 50%;
+	background-color: none;
+	padding: 16px;
+	transition: color 0.5s;
+}
+
+ul li.icons a ion-icon:hover {
+	background-color: rgba(105, 105, 255, 0.2);
+	color: rgb(95, 95, 233);
+}
+
+/* Love Message */
+
+#loveMessage {
+	border: 1px solid var(--love-mss-bord);
+	border-radius: 10px;
+	font-weight: 500;
+	text-align: center;
+	padding: 5px 0px;
+	margin: 14px 60px;
+}
+
+#loveMessage a {
+	transition: color 0.5s;
+}
+
+#loveMessage a:hover {
+	color: red;
+}
