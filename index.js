@@ -11,7 +11,3 @@ function toggleTheme() {
 		img.setAttribute("src", "./assets/avatar-light.png");
 	}
 }
-
-function yellHell() {
-	alert("Hell")
-}
